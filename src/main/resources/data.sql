@@ -1,0 +1,6 @@
+INSERT INTO funcionario (id, nome, sobrenome,cpf,ddd,celular,cargo,salario) VALUES (1, 'Anderson','Chiarella',96059816886,11,991458785,'Desenvolvedor JAVA',8000.00)
+INSERT INTO funcionario (id, nome, sobrenome,cpf,ddd,celular,cargo,salario) VALUES (2, 'Alvaro','Sila',96059816886,11,991458785,'Gestor',12000.00)
+INSERT INTO funcionario (id, nome, sobrenome,cpf,ddd,celular,cargo,salario) VALUES (3, 'Antonio','Fonseca',96059816886,11,991458785,'Desenvolvedor Front-end',7007.00)
+INSERT INTO funcionario (id, nome, sobrenome,cpf,ddd,celular,cargo,salario) VALUES (4, 'Carlos,','Gomes',96059816886,11,991458785,'Desenvolvedor Full-Stack',9009.00)
+INSERT INTO funcionario (id, nome, sobrenome,cpf,ddd,celular,cargo,salario) VALUES (5, 'Maria','Soouza',96059816886,11,991458785,'Desenvolvedor Front-End',5000.10)
+INSERT INTO funcionario (id, nome, sobrenome,cpf,ddd,celular,cargo,salario) VALUES (6, 'Joao','Borges',96059816886,11,991458785,'Desenvolvedor Front-End',5000.10)
