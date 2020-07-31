@@ -62,24 +62,20 @@ public class DesafioService {
 		Double taxaReajuste = 6.0;
 		Double reajustado = ((salarioAtual * taxaReajuste) / 100) + salarioAtual;
 
-
 		if (reajustado % 2 == 0) {
-			System.out.println("Salário reajustado com a taxa de " + taxaReajuste + "% + 1 se for par: " + df.format(reajustado + 1));
-			return "Salário reajustado com a taxa de " + taxaReajuste + "% + 1 se for par: " + df.format(reajustado + 1);
+			System.out.println("Salário reajustado com a taxa de " + taxaReajuste + "% + 1 se for par: "
+					+ df.format(reajustado + 1));
+			return "Salário reajustado com a taxa de " + taxaReajuste + "% + 1 se for par: "
+					+ df.format(reajustado + 1);
 		} else {
-			//caso não for par
-			System.out.println("OBS: Caso o numero for quebrado = valores após a , (virgula) não caracteriza PAR OU IMPAR: ");
+			// caso não for par
+			System.out.println(
+					"OBS: Caso o numero for quebrado = valores após a , (virgula) não caracteriza PAR OU IMPAR: ");
 			System.out.println("Salário reajustado com a taxa de " + taxaReajuste + "%: " + df.format(reajustado + 1));
-			
-			return "Salario + o reajuste: " + df.format(reajustado) + " Atenção: Caso o numero for quebrado = valores após a , (virgula) não caracteriza PAR OU IMPAR: ";
+
+			return "Salario + o reajuste: " + df.format(reajustado)
+					+ " Atenção: Caso o numero for quebrado = valores após a , (virgula) não caracteriza PAR OU IMPAR: ";
 		}
 
 	}
 }
-
-
-
-
-
-
-
