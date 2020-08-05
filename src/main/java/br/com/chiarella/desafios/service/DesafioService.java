@@ -18,6 +18,23 @@ public class DesafioService {
 
 	@Autowired
 	private DesafioRepository desafioRepository;
+	
+	public void save(Funcionario funcionario) {
+		desafioRepository.save(funcionario);
+	}
+	
+//	public void alterar(Long id, Funcionario altFuncionario) {
+//		 desafioRepository.findById(id)
+//			.map(funcionario -> {
+//			funcionario.setNome(altFuncionario.getNome());
+//			
+//			
+//		});
+//		 https://spring.io/guides/tutorials/bookmarks/
+//	}
+				
+	
+	
 
 	public Funcionario buscaPorId(Long id) {
 		Optional<Funcionario> optf = desafioRepository.findById(id);
@@ -78,4 +95,11 @@ public class DesafioService {
 		}
 
 	}
+
+
+
+
+
+
+
 }
