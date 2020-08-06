@@ -76,7 +76,7 @@ public class DesafioController {
 			@ApiResponse(code = 403, message = "Você não tem permissão para acessar este recurso"),
 			@ApiResponse(code = 500, message = "Foi gerada uma exceção"), })
 	@ResponseBody
-	@GetMapping(value = "/funcionarios2", produces = "application/json", consumes = "application/json")
+	@GetMapping(value = "/funcionarios2", produces = "application/json")
 	public ResponseEntity<List<Funcionario>> buscaTodos2() {
 		return new ResponseEntity<List<Funcionario>>(desafioService.buscaTodos(), HttpStatus.OK);
 	}

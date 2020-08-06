@@ -24,7 +24,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
  
 		docket
 		.select()
-		.apis(RequestHandlerSelectors.basePackage("br.com.ciceroednilson"))
+		.apis(RequestHandlerSelectors.basePackage("br.com.chiarella.desafios"))
 		.paths(PathSelectors.any())
 		.build()
 		.apiInfo(this.informacoesApi().build());
