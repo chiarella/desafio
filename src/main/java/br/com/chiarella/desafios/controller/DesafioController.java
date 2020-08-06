@@ -7,6 +7,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -25,7 +28,17 @@ public class DesafioController {
 	@Autowired
 	private DesafioService desafioService;
 	
-
+	@ResponseBody
+	@PostMapping(value = "/cadastrar")
+	public void save(@RequestBody Funcionario funcionario) {
+		desafioService.save(funcionario);
+	}
+	
+//	@ResponseBody
+//	@PutMapping(value = "/editar/{id}")
+//	public void alterar(@PathVariable(value = "id") Long id, @RequestBody Funcionario funcionario) {
+//		desafioService.alterar(id, funcionario);
+//	}
 
 	// Metodo para calculo do salario passado o ID do caolaborador
 	@ResponseBody

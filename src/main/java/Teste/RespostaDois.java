@@ -1,4 +1,4 @@
-package Exercicio1;
+package Teste;
 
 public class RespostaDois {
 
